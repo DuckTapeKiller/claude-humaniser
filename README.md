@@ -5,15 +5,15 @@ A skill for Claude Code that rewrites AI-sounding text so it reads like the writ
 ## Install
 
 ```bash
-git clone https://github.com/DuckTapeKiller/claude-humaniser.git ~/.claude/skills/humaniser
+git clone https://github.com/DuckTapeKiller/claude-humaniser.git ~/.claude/skills/claude-humaniser
 ```
 
-The folder is called `humaniser`, like the skill. Claude Code loads it in the next session.
+The folder is called `claude-humaniser`, like the repository; the skill is still `humaniser`. Claude Code loads it in the next session.
 
 ## Update
 
 ```bash
-git -C ~/.claude/skills/humaniser pull
+git -C ~/.claude/skills/claude-humaniser pull
 ```
 
 ## Contents
