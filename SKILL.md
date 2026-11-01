@@ -15,9 +15,9 @@ Rewrite AI-sounding text so it reads like the writer, not a chatbot, in the vari
 
 Do this before anything else, including marking tells.
 
-1. If the `choose_english_variety` tool is available, call it. It shows the user a picker and returns their choice.
-2. If the tool is not available, or it says no picker can be shown, ask the user in one short message whether they want British English or American English. Then end your turn and wait. Do not start the rewrite in the same turn.
-3. Ask every time this skill runs. Only the user's answer or the tool's result counts as the choice. The spelling of the source text, its topic, and the writer's location do not.
+1. If the `AskUserQuestion` tool is available, call it with two options: British English and American English.
+2. If the tool is not available, ask the user in one short message whether they want British English or American English. Then end your turn and wait. Do not start the rewrite in the same turn.
+3. Ask every time this skill runs. Only the user's answer counts as the choice. The spelling of the source text, its topic, and the writer's location do not.
 4. If the user cancels or does not choose, do not rewrite anything. Say that the humaniser needs a choice to continue.
 5. Once you have the choice, read the matching file in this skill's `references` folder: `references/british-english.md` or `references/american-english.md`. Read only that one, and follow it for the whole rewrite.
 
